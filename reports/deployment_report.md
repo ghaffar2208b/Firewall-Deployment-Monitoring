@@ -1,7 +1,7 @@
 # Deployment Report — SafeLine WAF
 
 **Host:** kali (Kali GNU/Linux, VirtualBox VM, 2 CPU / 4GB RAM)
-**Analyst:** [Your name]
+**Analyst:** Abdul Ghaffar
 **Date:** 2026-07-22
 
 ---
