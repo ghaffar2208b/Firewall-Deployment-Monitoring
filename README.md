@@ -37,6 +37,7 @@ A Web Application Firewall sits between users and a web app, inspecting every re
 | Protected endpoint | `http://localhost` (port 80, proxied to DVWA) |
 
 ## 4. Architecture
+```
 
 Attacker/Browser (same VM)
 │
@@ -54,6 +55,7 @@ http://localhost:80
 │ port 8081 │
 └───────────────┘
 
+```
 Both SafeLine and DVWA run as separate Docker containers on the same host. SafeLine's proxy container uses Docker's `host` network mode, so it reaches DVWA via the VM's actual network interface IP (`10.0.2.15`) rather than `127.0.0.1`, which — inside a container — refers to the container itself, not the host.
 
 ## 5. Folder Structure
